@@ -13,6 +13,7 @@
 		DE684CC31BCBE832003C86D1 /* map_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE684CC11BCBE832003C86D1 /* map_demo.xcdatamodeld */; };
 		DE684CC51BCBE832003C86D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE684CC41BCBE832003C86D1 /* Assets.xcassets */; };
 		DE684CC81BCBE832003C86D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE684CC61BCBE832003C86D1 /* LaunchScreen.storyboard */; };
+		DE8B6DAB1BCD49A400CE95CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8B6DAA1BCD49A400CE95CF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DE684CC41BCBE832003C86D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE684CC71BCBE832003C86D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE684CC91BCBE832003C86D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE8B6DAA1BCD49A400CE95CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8B6DAB1BCD49A400CE95CF /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 		DE684CAE1BCBE832003C86D1 = {
 			isa = PBXGroup;
 			children = (
+				DE8B6DAA1BCD49A400CE95CF /* CoreLocation.framework */,
 				DE684CB91BCBE832003C86D1 /* map-demo */,
 				DE684CB81BCBE832003C86D1 /* Products */,
 			);
@@ -287,6 +291,7 @@
 				DE684CCE1BCBE832003C86D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
