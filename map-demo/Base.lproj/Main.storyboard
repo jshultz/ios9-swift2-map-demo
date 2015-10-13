@@ -16,13 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="95h-k3-aSZ">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="95h-k3-aSZ">
                                 <rect key="frame" x="20" y="28" width="560" height="538"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="93S-6a-KN8"/>
+                                    <constraint firstAttribute="height" constant="538" id="XWH-9m-2jK"/>
+                                </constraints>
                             </mapView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="95h-k3-aSZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9MV-bh-Me0"/>
+                            <constraint firstItem="95h-k3-aSZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Ma-vo-Nej"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="map" destination="95h-k3-aSZ" id="JCQ-aA-3Vd"/>

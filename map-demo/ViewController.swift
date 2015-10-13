@@ -18,6 +18,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // Setup Map
+        
         let latitude:CLLocationDegrees = 40.7 // must use type CLLocationDegrees
         
         let longitude:CLLocationDegrees = -73.9 // must use type CLLocationDegrees
@@ -31,6 +33,24 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude) // Combination of the latitude and longitude variables
         
         let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span) // takes span and location and uses those to set the region.
+        
+        // Ending
+        
+        
+        // Adding an Annotation manually
+        let annotation = MKPointAnnotation()
+        
+        annotation.coordinate = location
+        
+        annotation.title = "This awesome place"
+        
+        annotation.subtitle = "If you were here you would know it."
+        
+        map.addAnnotation(annotation)
+        // Ending
+        
+        
+        
         
         map.setRegion(region, animated: true) // Take all that stuff and make a map!
         
